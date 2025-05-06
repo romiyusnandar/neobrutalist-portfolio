@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neo-white font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .neo-button {
+    @apply px-6 py-3 bg-neo-yellow border-neo border-neo-black font-display 
+           font-bold shadow-neo transition-all duration-200 hover:-translate-y-1 
+           hover:shadow-neo-lg active:translate-y-0 active:shadow-neo;
+  }
+  
+  .neo-card {
+    @apply bg-white border-neo border-neo-black p-6 shadow-neo 
+           transition-all duration-200 hover:-translate-y-1 hover:shadow-neo-lg;
+  }
+  
+  .neo-input {
+    @apply w-full px-4 py-3 bg-white border-neo border-neo-black 
+           focus:outline-none focus:ring-2 focus:ring-neo-blue;
+  }
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8;
+}
